@@ -85,7 +85,7 @@ Code in the helper notebooks and scripts may assist with preprocessing tasks, su
 - [DFDC Fake processed videos](https://drive.google.com/drive/folders/1yz3DBeFJvZ_QzWsyY7EwBNm7fx4MiOfF?usp=sharing)  
 - [DFDC Real processed videos](https://drive.google.com/drive/folders/1wN3ZOd0WihthEeH__Lmj_ENhoXJN6U11?usp=sharing)  
 
-**Note:** Labels for all the above preprocessed data are under `/label/Gobal_metadata.csv`.
+**Note:** Labels for all the above preprocessed data are under `Gobal_metadata.csv`.
 
 ---
 
