@@ -10,6 +10,24 @@ We recommend using [Google Colab](https://colab.research.google.com/) for runnin
 
 ---
 
+### Directory Structure
+For ease of understanding the project is structured in below format
+```
+Deepfake_detection_using_deep_learning
+    |
+    |--- Django Application
+    |--- Model Creation
+    |--- Documentaion
+```
+1. Django Application 
+   - This directory consists of the django made application of our work. Where a user can upload the video and submit it to the model for prediction. The trained model performs the prediction and the result is displayed on the screen.
+2. Model Creation
+   - This directory consists of the step by step process of creating and training a deepfake detection model using our approach.
+3. Documentation
+   - This directory consists of all the documentation done during the project
+
+---
+
 ## Dataset
 Some of the datasets used in this project are listed below:
 - [FaceForensics++](https://github.com/ondyari/FaceForensics)
@@ -25,7 +43,7 @@ Steps performed before training:
 - Detect and crop the face from each frame  
 - Save the cropped frames/videos for training  
 
-Notebook: `notebooks/preprocessing.ipynb`
+Notebook: `preprocessing.ipynb`
 
 ---
 
@@ -37,7 +55,7 @@ Notebook: `notebooks/preprocessing.ipynb`
 - Test and evaluate performance  
 - Save the trained model in `.pt` format  
 
-Notebook: `notebooks/deepfake_starter_kit.ipynb`
+Notebook: `deepfake_starter_kit.ipynb`
 
 ---
 
@@ -45,16 +63,16 @@ Notebook: `notebooks/deepfake_starter_kit.ipynb`
 - Load the saved PyTorch model (`.pt`)  
 - Predict whether a new unseen video is **real** or **fake**, based on trained weights  
 
-Notebook: `notebooks/predict.ipynb`
+Notebook: `predict.ipynb`
 
 ---
 
 ## Helpers
 Code in the helper notebooks and scripts may assist with preprocessing tasks, such as:
-- Converting JSON label files into CSV (`scripts/label_json_to_csv.py`)  
-- Copying files from one directory to another (`notebooks/dataset_split_real_fake.ipynb`)  
-- Handling class imbalance (`notebooks/balance_data.ipynb`)  
-- Removing audio-altered files from DFDC dataset (`notebooks/remove_audio_altered_files.ipynb`)  
+- Converting JSON label files into CSV (`label_json_to_csv.py`)  
+- Copying files from one directory to another (`dataset_split_real_fake.ipynb`)  
+- Handling class imbalance (`balance_data.ipynb`)  
+- Removing audio-altered files from DFDC dataset (`remove_audio_altered_files.ipynb`)  
 
 ---
 
@@ -83,8 +101,7 @@ Then simply run the prediction notebook (`predict.ipynb`) for inference.
 1. Preprocess dataset → `preprocessing.ipynb`  
 2. (Optional) Balance dataset → `balance_data.ipynb`  
 3. Train model → `deepfake_starter_kit.ipynb`  
-4. Save trained weights → `models/`  
-5. Predict new videos → `predict.ipynb`  
+4. Predict new videos → `predict.ipynb`  
 
 ---
 
