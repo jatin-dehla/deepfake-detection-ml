@@ -89,7 +89,7 @@ Then simply run the prediction notebook (`predict.ipynb`) for inference.
 ---
 
 ## System Architecture
-![System Architecture](assets/System%20Architecture.png)
+![System Architecture](System%20Architecture.png)
 
 ---
 
